@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - CoxyPaws Cafe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/catclaw.png" alt="CozyPaws Logo">
+                <h1>CozyPaws</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="#our-cats">Our Cats</a></li>
+                <li><a href="#events">Events</a></li>
+                <li><a href="#visit">Visit Us</a></li>
+                <li><a href="services.html">Support Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>Contact Us</h1>
+        <p>Have questions about our cafe, cats, or services? Get in touch with us!</p>
+    </section>
+
+    <main class="content-section">
+        <div style="max-width: 800px; margin: 0 auto;">
+            <h2 style="text-align: center; margin-bottom: 2rem; color: var(--text-dark);">Send us a Message</h2>
+
+            <form id="contactForm" style="background: var(--primary-color); padding: 2rem; border-radius: 10px;">
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="name" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Full Name
+                        *</label>
+                    <input type="text" id="name" name="name" required
+                        style="width: 100%; padding: 0.8rem; border: 2px solid var(--accent-color); border-radius: 5px;"
+                        placeholder="Your full name">
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="email" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Email Address
+                        *</label>
+                    <input type="email" id="email" name="email" required
+                        style="width: 100%; padding: 0.8rem; border: 2px solid var(--accent-color); border-radius: 5px;"
+                        placeholder="your.email@example.com">
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="phone" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Phone
+                        Number</label>
+                    <input type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+                        style="width: 100%; padding: 0.8rem; border: 2px solid var(--accent-color); border-radius: 5px;"
+                        placeholder="123-456-7890">
+                    <small style="display: block; margin-top: 0.3rem; color: var(--secondary-color);">Format:
+                        123-456-7890</small>
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="subject" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Subject
+                        *</label>
+                    <select id="subject" name="subject" required
+                        style="width: 100%; padding: 0.8rem; border: 2px solid var(--accent-color); border-radius: 5px;">
+                        <option value="" disabled selected>Select a topic</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="reservation">Table Reservation</option>
+                        <option value="cats">Cat Adoption/Visiting</option>
+                        <option value="event">Event Information</option>
+                        <option value="feedback">Feedback & Suggestions</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <label for="message" style="display: block; margin-bottom: 0.5rem; font-weight: bold;">Message
+                        *</label>
+                    <textarea id="message" name="message" required rows="6"
+                        style="width: 100%; padding: 0.8rem; border: 2px solid var(--accent-color); border-radius: 5px;"
+                        placeholder="Please type your message here..."></textarea>
+                </div>
+
+                <div style="margin-bottom: 1.5rem;">
+                    <label style="display: flex; align-items: center; gap: 0.5rem;">
+                        <input type="checkbox" name="newsletter" checked>
+                        <span>Subscribe to our newsletter for updates on new cats and special events</span>
+                    </label>
+                </div>
+
+                <button type="submit"
+                    style="background-color: var(--secondary-color); color: white; padding: 1rem 2rem; border: none; border-radius: 25px; font-size: 1rem; cursor: pointer; width: 100%; transition: background-color 0.3s;">
+                    Send Message
+                </button>
+            </form>
+
+            <div style="margin-top: 3rem; background: var(--primary-color); padding: 2rem; border-radius: 10px;">
+                <h3 style="margin-bottom: 1rem; color: var(--text-dark);">Other Ways to Reach Us</h3>
+                <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); gap: 1.5rem;">
+                    <div>
+                        <h4 style="color: var(--secondary-color); margin-bottom: 0.5rem;">Visit Our Cafe</h4>
+                        <p>123 Purrington Street<br>
+                            Kittyville, KV 12345</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--secondary-color); margin-bottom: 0.5rem;">Call Us</h4>
+                        <p>(555) 123-CATS<br>
+                            Mon-Fri: 10am-6pm</p>
+                    </div>
+                    <div>
+                        <h4 style="color: var(--secondary-color); margin-bottom: 0.5rem;">Email Directly</h4>
+                        <p>info@coxypawscafe.com<br>
+                            reservations@coxypawscafe.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CoxyPaws Cafe. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+        </div>
+        <p style="margin-top: 1rem;">123 Purrington Street, Kittyville | Open daily 10am-8pm</p>
+    </footer>
+</body>
+
+</html>
