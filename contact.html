@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - CozyPaws Cafe</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="images/catclaw.png" alt="CozyPaws Logo">
+                <h1>CozyPaws</h1>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="index.html#our-cats">Our Cats</a></li>
+                <li><a href="index.html#events">Events</a></li>
+                <li><a href="index.html#visit">Visit Us</a></li>
+                <li><a href="services.html">Support Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="page-header">
+        <h1>Contact Us</h1>
+        <p>Have questions about our cafe, cats, or services? Get in touch with us!</p>
+    </section>
+
+    <main class="content-section">
+        <div class="contact-form-container">
+            <h2>Send us a Message</h2>
+
+            <form id="contactForm" class="contact-form">
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="firstName">First Name *</label>
+                        <input type="text" id="firstName" name="firstName" class="form-control" placeholder="Your first name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="lastName">Last Name *</label>
+                        <input type="text" id="lastName" name="lastName" class="form-control" placeholder="Your last name" required>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">Email Address *</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="your.email@example.com" required>
+                    <small class="form-hint">We'll never share your email with anyone else.</small>
+                </div>
+
+                <div class="form-row">
+                    <div class="form-group">
+                        <label for="city">City *</label>
+                        <input type="text" id="city" name="city" class="form-control" placeholder="Your city" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="zipCode">Zip Code *</label>
+                        <input type="text" id="zipCode" name="zipCode" class="form-control" placeholder="e.g., 12345" pattern="\d{5}" title="Please enter a 5-digit zip code" required>
+                        <small class="form-hint">5-digit US zip code</small>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone Number (Optional)</label>
+                    <input type="tel" id="phone" name="phone" class="form-control" placeholder="123-456-7890" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+                    <small class="form-hint">Format: 123-456-7890</small>
+                </div>
+
+                <div class="form-group">
+                    <label for="subject">Subject *</label>
+                    <select id="subject" name="subject" class="form-control" required>
+                        <option value="" disabled selected>Select a topic</option>
+                        <option value="general">General Inquiry</option>
+                        <option value="reservation">Table Reservation</option>
+                        <option value="cats">Cat Adoption/Visiting</option>
+                        <option value="event">Event Information</option>
+                        <option value="feedback">Feedback & Suggestions</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="message">Message *</label>
+                    <textarea id="message" name="message" class="form-control" rows="6" placeholder="Please type your message here..." required></textarea>
+                </div>
+
+                <div class="form-group form-check">
+                    <input type="checkbox" id="newsletter" name="newsletter" checked>
+                    <label for="newsletter">Subscribe to our newsletter for updates on new cats and special events</label>
+                </div>
+
+                <button type="submit" class="btn btn-submit">
+                    Send Message
+                </button>
+            </form>
+
+            <div class="contact-info">
+                <h3>Other Ways to Reach Us</h3>
+                <div class="contact-info-grid">
+                    <div class="contact-info-item">
+                        <h4>Visit Our Cafe</h4>
+                        <p>123 Purrington Street<br>
+                            Kittyville, KV 12345</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <h4>Call Us</h4>
+                        <p>(555) 123-CATS<br>
+                            Mon-Fri: 10am-6pm</p>
+                    </div>
+                    <div class="contact-info-item">
+                        <h4>Email Directly</h4>
+                        <p>info@cozypawscafe.com<br>
+                            reservations@cozypawscafe.com</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 CozyPaws Cafe. All rights reserved.</p>
+        <div class="social-links">
+            <a href="#">Instagram</a>
+            <a href="#">Facebook</a>
+            <a href="#">Twitter</a>
+        </div>
+        <p>123 Purrington Street, Kittyville | Open daily 10am-8pm</p>
+    </footer>
+</body>
+</html>
